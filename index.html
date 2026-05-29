@@ -8,9 +8,10 @@
     html, body {
       margin: 0;
       height: 100%;
+      overflow: hidden;
     }
 
-    iframe {
+    .pdf-viewer {
       width: 100%;
       height: 100vh;
       border: none;
@@ -18,6 +19,15 @@
   </style>
 </head>
 <body>
-  <iframe src="ayushresume.pdf"></iframe>
+  <object
+    class="pdf-viewer"
+    data="ayushresume.pdf"
+    type="application/pdf"
+  >
+    <iframe
+      class="pdf-viewer"
+      src="ayushresume.pdf"
+    ></iframe>
+  </object>
 </body>
 </html>
